@@ -1,0 +1,52 @@
+
+.container {
+    background: lightslategrey;
+    /* margin: 0px auto; */
+    width: 100%;
+
+}
+
+h1 { 
+    display: block;
+    font-size: 2em;
+    font-weight: bold;
+}
+h2 { 
+    display: block;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.row {
+    text-align: center;
+}
+
+#search-form {
+    width: 50%;
+    margin: 0px auto;
+    background: whitesmoke;
+}
+ input {
+     margin: 14px 0;
+ }
+
+ #animal-input:hover {
+    background-color: darkgoldenrod;
+}
+
+.animal-btn {
+    margin: 10px 6px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: beige;
+    border: none;
+}
+
+.animal-wrap {
+   float: left;
+   /* margin: 1px; */
+   width: 33.3%;
+}
+img {
+    width: 95%;
+}

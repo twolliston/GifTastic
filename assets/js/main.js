@@ -34,11 +34,14 @@ $(document).ready(function () {
             // Creating a div to hold the animals
             var animalDiv = $("<div class='animal'>");
 
+
             // Looping over every result item
             for (var i = 0; i < results.length; i++) {
 
                 // Only taking action if the photo has an appropriate rating
                 if (results[i].rating !== "r" && results[i].rating !== "pg-13") {
+
+                    var wrapDiv = $("<div class='animal-wrap'>");
 
                     // Storing the result item's rating
                     var rating = results[i].rating;
@@ -61,8 +64,9 @@ $(document).ready(function () {
                     amimalImage.attr("class", "gif");
 
                     // Appending the paragraph and amimalImage we created to the "gifDiv" div we created
-                    animalDiv.append(p);
-                    animalDiv.append(amimalImage);
+                    animalDiv.append(wrapDiv);
+                    wrapDiv.append(p);
+                    wrapDiv.append(amimalImage);
                     $("#animals-view").prepend(animalDiv);
                 }
             }
@@ -109,6 +113,7 @@ $(document).ready(function () {
     function changeImageState() {
         // The attr jQuery method allows us to get or set the value of any attribute on our HTML element
         var state = $(this).attr("data-state");
+      
         // If the clicked image's state is still, update its src attribute to what its data-animate value is.
         // Then, set the image's data-state to animate
         // Else set src to the data-still value
