@@ -13,54 +13,47 @@
     <div class="container">
 
         <!-- Render heading  -->
-        <div class="row">
+        <div class="col span_12_of_12" id="header">
             <h1>Gifology</h1>
         </div>
 
+
         <!-- Render buttons  -->
-        <div class="row" id="button">
+        <div class="col span_12_of_12" id="button">
             <div id="buttons-view"></div>
         </div>
 
-        <!-- Search  Form -->
-        <div class="row" id="search-form">
-            <!-- Render form heading  -->
-            <form id="animal-form">
-                <h2>Animal Search</h2>
-                <hr>
-                <label for="animal-input">Add a Animal</label>
-                <input type="text" id="animal-input">
 
-                <br>
+        <!-- Search Form -->
+        <div class="col span_12_of_12" id="search-form">
+            <form id="animal-form">
+
+                <h2>Search</h2>
+                <hr>
+                <label for="animal-input">New Search</label>
+                <input type="text" id="animal-input">
+                <!-- <br>  -->
 
                 <!-- Button triggers new search to be added -->
-                <input id="add-animal" type="submit" value="Add a Animal">
+                <input id="add-animal" type="submit" value="Add">
+
             </form>
+
         </div>
 
-        <!-- Render search results -->
-        <div class="row">
-            <!-- <aside id="animals-outer-box"> -->
-            <!-- <div id="animals-inner-box"> -->
+
+        <!-- Render buttons  -->
+        <div class="col span_12_of_12" id="images">
             <div id="animals-view"></div>
-            <!-- </div>
-            </aside> -->
         </div>
 
     </div>
 
-    
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous">
         </script>
 
     <script type='text/javascript' src='assets/js/main.js'></script>
 
-
-
-
-
-
 </body>
-
 </html>

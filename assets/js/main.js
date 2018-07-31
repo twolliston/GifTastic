@@ -48,6 +48,9 @@ $(document).ready(function () {
 
                     // Creating a paragraph tag with the result item's rating
                     var p = $("<p>").text("Rating: " + rating);
+                    
+                    // Assign a class to paragraph tag
+                    p.attr("class", "image-heading");
 
                     // Creating an image tag
                     var amimalImage = $("<img>");
