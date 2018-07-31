@@ -82,6 +82,9 @@ $(document).ready(function () {
         // (this is necessary otherwise you will have repeat buttons)
         $("#buttons-view").empty();
 
+        // clear input 
+        $("#animal-input").val('');
+
         // Looping through the array of animals
         for (var i = 0; i < animals.length; i++) {
 
